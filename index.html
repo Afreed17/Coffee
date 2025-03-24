@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Puffer</title>
+    <title>Puffer</title>
     <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -78,6 +78,13 @@
             font-weight: 700;
         }
 
+        .gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
         /* Improved responsiveness for Contact section */
         @media (max-width: 768px) {
             #contact .row {
@@ -100,7 +107,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid" id>
-            <a class="navbar-brand" href="#">COFFEEPUFFER</a>
+            <a class="navbar-brand" href="#">PUFFER</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -110,6 +117,8 @@
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
                     <li class="nav-item"><a class="nav-link" href="#variants">Variants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#demo">Demo</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -120,7 +129,7 @@
     <div class="position-relative overflow-hidden d-flex align-items-center justify-content-center text-center vh-100" 
          style="background: url('./images/cp2.webp') no-repeat center center/cover; width: 100vw;" id="home">
         <div class="col-md-6 p-lg-5">
-            <h1 class="display-3 fw-bold text-white">COFFEEPUFFER.</h1>
+            <h1 class="display-3 fw-bold text-white">PUFFER.</h1>
             <h3 class="fw-normal text-light mb-3">Attraction of Real Coffee Lovers</h3>
         </div>
     </div>
@@ -168,7 +177,7 @@
             <!-- Variant 1: Classic Black -->
             <div class="col">
                 <div class="text-bg-dark p-4 rounded-4 shadow-sm">
-                    <h3 class="display-6">COFFEEPUFFER PURE MIST</h3>
+                    <h3 class="display-6">PUFFER PURE MIST</h3>
                     <p>Captivating mist for branding and engagement.</p>
                     <div class="shadow-sm mx-auto"
                          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;
@@ -193,7 +202,7 @@
                     <p>Captivating mist for branding and engagement.</p>
                     <div class="shadow-sm mx-auto"
                          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;
-                                background: url('./images/var2.webp') no-repeat center center/cover;">
+                                background: url('./images/lobby2.webp') no-repeat center center/cover;">
                     </div>
                 </div>
                 <p class="variant-description">
@@ -210,6 +219,124 @@ meditation spaces.
 
         </div>
     </div>
+
+
+
+
+
+    <div class="container px-4 py-4" id="gallery">
+        <h2 class="pb-2 border-bottom">Gallery</h2>
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-dark mx-2" onclick="filterGallery('all')">All</button>
+            <button class="btn btn-outline-dark mx-2" onclick="filterGallery('coffee')">Coffee Models</button>
+            <button class="btn btn-outline-dark mx-2" onclick="filterGallery('garden')">Garden Models</button>
+            <button class="btn btn-outline-dark mx-2" onclick="filterGallery('lobby')">Lobby Models</button>
+        </div>
+        <div class="row g-4 text-center">
+            <!-- All Models (6 Images) -->
+            <div class="col-lg-4 col-md-6 gallery-item all">
+                <img src="./images/coffeeModel3.webp" class="img-fluid rounded-4 shadow-sm" alt="Coffee Model 1">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item all">
+                <img src="./images/garden2.webp" class="img-fluid rounded-4 shadow-sm" alt="Garden Model 1">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item all">
+                <img src="./images/lobby2.webp" class="img-fluid rounded-4 shadow-sm" alt="Lobby Model 1">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item all">
+                <img src="./images/coffee3.webp" class="img-fluid rounded-4 shadow-sm" alt="Coffee Model 2">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item all">
+                <img src="./images/spray2.webp" class="img-fluid rounded-4 shadow-sm" alt="Spray Model 2">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item all">
+                <img src="./images/lobby1.webp" class="img-fluid rounded-4 shadow-sm" alt="Lobby Model 2">
+            </div>
+    
+            <!-- Coffee Models (6 Images) -->
+            <div class="col-lg-4 col-md-6 gallery-item coffee">
+                <img src="./images/coffeeModel1.webp" class="img-fluid rounded-4 shadow-sm" alt="Coffee Model 1">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item coffee">
+                <img src="./images/var1.webp" class="img-fluid rounded-4 shadow-sm" alt="Coffee Model 2">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item coffee">
+                <img src="./images/coffeeModel5.jpeg" class="img-fluid rounded-4 shadow-sm" alt="Coffee Model 3">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item coffee">
+                <img src="./images/coffeeModel2.webp" class="img-fluid rounded-4 shadow-sm" alt="Coffee Model 3">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item coffee">
+                <img src="./images/coffeeModel4.webp" class="img-fluid rounded-4 shadow-sm" alt="Coffee Model 3">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item coffee">
+                <img src="./images/coffeeModel6.jpeg" class="img-fluid rounded-4 shadow-sm" alt="Coffee Model 3">
+            </div>
+    
+            <!-- Garden Models (6 Images) -->
+            <div class="col-lg-4 col-md-6 gallery-item garden">
+                <img src="./images/garden1.webp" class="img-fluid rounded-4 shadow-sm" alt="Garden Model 1">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item garden">
+                <img src="./images/garden6.webp" class="img-fluid rounded-4 shadow-sm" alt="Garden Model 2">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item garden">
+                <img src="./images/garden2.webp" class="img-fluid rounded-4 shadow-sm" alt="Garden Model 3">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item garden">
+                <img src="./images/garden7.webp" class="img-fluid rounded-4 shadow-sm" alt="Garden Model 3">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item garden">
+                <img src="./images/garden3.webp" class="img-fluid rounded-4 shadow-sm" alt="Garden Model 3">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item garden">
+                <img src="./images/garden8.webp" class="img-fluid rounded-4 shadow-sm" alt="Garden Model 3">
+            </div>
+    
+            <!-- Lobby Models (6 Images) -->
+            <div class="col-lg-4 col-md-6 gallery-item lobby">
+                <img src="./images/lobby1.webp" class="img-fluid rounded-4 shadow-sm" alt="Lobby Model 1">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item lobby">
+                <img src="./images/lobby 8.webp" class="img-fluid rounded-4 shadow-sm" alt="Lobby Model 2">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item lobby">
+                <img src="./images/lobby2.webp" class="img-fluid rounded-4 shadow-sm" alt="Lobby Model 3">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item lobby">
+                <img src="./images/lobby9.webp" class="img-fluid rounded-4 shadow-sm" alt="Lobby Model 3">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item lobby">
+                <img src="./images/lobby5.webp" class="img-fluid rounded-4 shadow-sm" alt="Lobby Model 3">
+            </div>
+            <div class="col-lg-4 col-md-6 gallery-item lobby">
+                <img src="./images/lobby3.webp" class="img-fluid rounded-4 shadow-sm" alt="Lobby Model 3">
+            </div>
+        </div>
+        <div class="row g-4 text mt-4" id="demo">
+            <h3 class="pb-2 border-bottom">Video Demonstrations</h3>
+            <div class="col-lg-4 col-md-6">
+                <video controls class="img-fluid rounded-4 shadow-sm w-100">
+                    <source src="./images/video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <video controls class="img-fluid rounded-4 shadow-sm w-100">
+                    <source src="./images/video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <video controls class="img-fluid rounded-4 shadow-sm w-100">
+                    <source src="./images/video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+    
+
 
 
     <div class="container px-4 py-5" id="contact">
@@ -245,20 +372,17 @@ meditation spaces.
         </div>
     </div>
 
-
-    
-    
-
-
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary">Home</a></li>
                 <li class="nav-item"><a href="#features" class="nav-link px-2 text-body-secondary">Features</a></li>
                 <li class="nav-item"><a href="#variants" class="nav-link px-2 text-body-secondary">Variants</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link px-2 text-body-secondary">Gallery</a></li>
+                <li class="nav-item"><a href="#demo" class="nav-link px-2 text-body-secondary">Demo</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link px-2 text-body-secondary">Contact</a></li>
             </ul>
-            <p class="text-center text-body-secondary">© <span id="year"></span> COFFEEPUFFER</p>
+            <p class="text-center text-body-secondary">© <span id="year"></span> PUFFER</p>
         </footer>
     </div>
     
@@ -266,6 +390,26 @@ meditation spaces.
         // JavaScript to set the current year dynamically
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
+<script>
+    function filterGallery(category) {
+        const items = document.querySelectorAll('.gallery-item');
+        if (category === 'all') {
+            items.forEach((item, index) => {
+                if (index < 6) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        } else {
+            items.forEach(item => item.style.display = item.classList.contains(category) ? 'block' : 'none');
+        }
+    }
+    filterGallery('all');
+</script>
+
+
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
